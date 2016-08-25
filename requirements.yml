@@ -1,0 +1,4 @@
+- name: yujinrobot.ros
+  src: http://github.com/yujinrobot/ansible-role-ros
+  scm: git
+  version: master  # we should probably stick to master until we have multiple incompatible major versions...

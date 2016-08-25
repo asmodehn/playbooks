@@ -1,0 +1,16 @@
+#
+# Setup kinetic-VirtualBox
+#
+- name:  Kinetic VBox Setup
+  hosts:
+   - kinetic-VirtualBox
+
+  #strategy: debug
+  pre_tasks:
+   - name: 'Ensure that we can connect to this host'
+     ping:
+
+  roles:
+   - role: yujinrobot.ros
+       ros_release: "kinetic"
+     become: yes
