@@ -1,3 +1,4 @@
+---
 #
 # Setup kinetic-VirtualBox
 #
@@ -12,5 +13,5 @@
 
   roles:
    - role: yujinrobot.ros
-       ros_release: "kinetic"
+     ros_release: "kinetic"
      become: yes
