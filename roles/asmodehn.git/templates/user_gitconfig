@@ -1,0 +1,13 @@
+[credential]
+        helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+[merge]
+        conflictstyle = diff3
+        tool = automeld
+[mergetool "automeld"]
+        cmd = meld --auto-merge --output $MERGED $LOCAL $BASE $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+
+[push]
+        default = simple
+[core]
+        autocrlf = input
+
